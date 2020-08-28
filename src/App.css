@@ -1,38 +1,270 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #e5e5e5e5;
+  color: #2c2c2c;
+  font-family: 'Roboto', sans-serif, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section.navbar {
+  background-color: #223C50;
+  color: #e5e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+section.navbar div.company-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.navbar div.company-name h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
 }
+
+section.navbar div.company-name h1 a span {
+  font-family: 'Ribeye', cursive;
+  font-size: 45px;
+}
+
+section.navbar div.button-container {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 330px;
+}
+
+section.navbar div.button-container svg {
+  position: relative;
+  bottom: 4px;
+  color: #e5e5e5e5;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+section.navbar div.button-container svg:hover {
+  color: #fff;
+}
+
+section.navbar div.searchbar {
+  position: absolute;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+section.navbar div.searchbar form input {
+  background-color: #e5e5e5e5;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  text-indent: 10px;
+  height: 30px;
+  width: 250px;
+  position: relative;
+  bottom: 5px;
+}
+
+section.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  list-style: none;
+  text-decoration: none;
+}
+
+section.navbar ul li {
+  padding: 0 40px;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom .3s;
+  transition: border-bottom .3s;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+section.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section.navbar ul li:hover {
+  border-bottom: 1px solid #4bab85;
+}
+
+section.welcome-container {
+  position: absolute;
+  top: 150px;
+  height: 100vh;
+  margin: 75px;
+}
+
+section.welcome-container h1 {
+  font-size: 54px;
+  text-align: center;
+  margin: 25px;
+}
+
+section.welcome-container p {
+  margin: 25px;
+}
+
+section.item-container {
+  position: absolute;
+  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.item-container h1 {
+  font-size: 36px;
+  margin: 0 30%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+section.item-container p {
+  font-weight: 200;
+}
+
+section.item-container p.section-description {
+  margin: 15px 10%;
+}
+
+section.item-container div.item-card {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  min-height: 500px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.item-container div.item-card h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section.item-container div.item-card p {
+  width: 90%;
+  padding: 15px 0;
+}
+
+section.item-container div.item-card img {
+  width: 90%;
+  height: auto;
+}
+
+section.item-container div.item-card button.add-to-cart {
+  width: 150px;
+  height: 50px;
+  margin: 15px 0;
+  color: #888;
+  background-color: transparent;
+  border: 2px solid #888;
+  text-transform: uppercase;
+}
+
+section.cart-container {
+  position: absolute;
+  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.cart-container h1 {
+  font-size: 36px;
+  margin: 0 30%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+section.cart-container p {
+  font-weight: 200;
+}
+
+section.cart-container p.section-description {
+  margin: 15px 10%;
+}
+/*# sourceMappingURL=App.css.map */
