@@ -10,7 +10,7 @@ const Navbar = () => {
                <h1><Link to="/">This <span>&</span> That</Link></h1>
            </div>
 
-           <Cartbutton name="Leia"/>
+           <Cartbutton />
 
            <Searchbar />
            

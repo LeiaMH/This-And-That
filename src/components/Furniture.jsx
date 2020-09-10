@@ -6,10 +6,11 @@ const Furniture = () => {
   const itemData =  Data
   const furnitureList = itemData.map(item => 
       <div key={ item.id } className="item-card">
-        <h4 className="item-title">{ item.title }</h4>
+        <h3 className="item-title">{ item.title }</h3>
         <img src={ item.img } alt="product/furniture"/>
+        <h4 className="item-price">{ '£ ' + item.price }</h4>
         <p className="item-description">{ item.body }</p>
-        <AddToCartButton />
+        <AddToCartButton item={item}/>
       </div>
   )
     
