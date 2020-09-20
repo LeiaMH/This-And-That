@@ -7,10 +7,11 @@ import Plants from './components/Plants'
 import Welcome from './components/Welcome'
 import Stationary from './components/Stationary'
 import Shoppingcart from './components/Shoppingcart'
+import ItemPage from './components/ItemPage';
 
 class App extends Component {
   state = {
-    items: [{name:'booo', price:'4,25'}]
+    
   }
 
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path='/Plants' component={Plants} />
             <Route path='/Stationary' component={Stationary} />
             <Route path='/Shoppingcart' component={Shoppingcart} />
+            <Route path='/:item_id' component={ItemPage} />
           </Switch>
         </div>
       </BrowserRouter>
