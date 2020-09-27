@@ -11,7 +11,14 @@ import ItemPage from './components/ItemPage';
 
 class App extends Component {
   state = {
-    
+    cartItems: []
+  }
+
+  addItem = (item) => {
+    let cartItems = [...this.state.cartItems, item]
+    this.setState({
+      cartItems: cartItems
+    })
   }
 
   render() {
@@ -21,10 +28,10 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path='/' component={Welcome} />
-            <Route path='/Furniture' component={Furniture} />
-            <Route path='/Plants' component={Plants} />
-            <Route path='/Stationary' component={Stationary} />
-            <Route path='/Shoppingcart' component={Shoppingcart} />
+            <Route path='/Furniture' render={(props) => (<Furniture {...props} addItem={ this.addItem } />)}/>
+            <Route path='/Plants' render={(props) => (<Plants {...props} addItem={ this.addItem } />)}/>
+            <Route path='/Stationary' render={(props) => (<Stationary {...props} addItem={ this.addItem } />)}/>
+            <Route path='/Shoppingcart' render={(props) => (<Shoppingcart {...props} addItems={ this.state } />)}/>
             <Route path='/:item_id' component={ItemPage} />
           </Switch>
         </div>
