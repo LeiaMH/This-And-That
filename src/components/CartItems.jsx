@@ -7,7 +7,7 @@ const CartItems = (props) => {
         return (
             <li key={ item.item.id } className="item">
               <span className="item-title"> { item.item.title }  </span>
-              <span>'x1'</span>
+              <span>x1</span>
               <span className="item-price"> { item.item.price } </span>
             </li>
         )}) 
