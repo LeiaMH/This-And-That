@@ -4,17 +4,17 @@ import AddToCartButton from './AddToCartButton'
 import { Link } from 'react-router-dom'
 
 class ItemList extends Component {
-  state = {
-    cartItems: []
-  }
+  // state = {
+  //   cartItems: []
+  // }
 
-  addItem = (item) => {
-    console.log(item)
-    let cartItems = [...this.state.cartItems, item]
-    this.setState({
-      cartItems: cartItems
-    })
-  }
+  // addItem = (item) => {
+  //   console.log(item)
+  //   let cartItems = [...this.state.cartItems, item]
+  //   this.setState({
+  //     cartItems: cartItems
+  //   })
+  // }
 
   render(){
   const itemData =  Data.filter(item => item.type === this.props.type)
@@ -26,7 +26,7 @@ class ItemList extends Component {
         <img src={ item.img } alt="product"/>
         <h4 className="item-price">{ '£ ' + item.price }</h4>
         <p className="item-description">{ item.body }</p>
-        <AddToCartButton item={ item } addItem={ this.addItem } />
+        <AddToCartButton item={ item } addItem={ this.props.addItem } />
       </div>
   )
   

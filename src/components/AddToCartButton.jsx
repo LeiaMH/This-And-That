@@ -9,7 +9,6 @@ class AddToCartButton extends Component {
 
     handleClick = (e) => {
         e.preventDefault()
-        //console.log(this.props)
         this.props.addItem({
             item: {title: this.props.item.title,
                    price: this.props.item.price,
