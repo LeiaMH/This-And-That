@@ -285,6 +285,42 @@ section.cart-container p.section-description {
   margin: 15px 10%;
 }
 
+section.cart-container .item-list {
+  background-color: #fff;
+  width: 75%;
+  min-height: 50vh;
+  padding: 50px;
+  margin: 25px;
+}
+
+section.cart-container .item-list .table-headings-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0 25px 0;
+}
+
+section.cart-container .item-list .table-headings-container .table-heading {
+  font-weight: 800;
+  font-size: 22.5px;
+  color: #2c2c2c;
+  list-style: none;
+  text-align: end;
+}
+
+section.cart-container .item-list .table-items-container .item {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.cart-container .item-list .table-items-container .item span {
+  text-align: end;
+}
+
 section.item-page-container {
   position: absolute;
   top: 150px;
