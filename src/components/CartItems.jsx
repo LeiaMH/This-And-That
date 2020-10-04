@@ -5,10 +5,10 @@ const CartItems = (props) => {
     
     const itemList = items.map(item => {
         return (
-            <li key={ item.item.id } className="item">
-              <span className="item-title"> { item.item.title }  </span>
-              <span>x1</span>
-              <span className="item-price"> { item.item.price } </span>
+            <li key={ item.id } className="item">
+              <span className="item-title"> { item.title }  </span>
+              <span className="item-quantity">{ item.count }</span>
+              <span className="item-price"> { item.price } </span>
             </li>
         )}) 
 
@@ -17,7 +17,7 @@ const CartItems = (props) => {
            <div className="table-headings-container">
              <li className="table-heading">Product Details</li>
              <li className="table-heading">Quantity</li>
-             <li className="table-heading">Total</li>
+             <li className="table-heading">Price</li>
            </div>
            <div className="table-items-container">
               { itemList }   
