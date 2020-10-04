@@ -3,7 +3,7 @@ import ItemData from '../data/ItemData'
 import AddToCartButton from './AddToCartButton'
 
 class ItemPage extends Component {
-    state = {}
+     state = {}
 
     componentDidMount(){
         let id = this.props.match.params.item_id;
@@ -11,10 +11,6 @@ class ItemPage extends Component {
         this.setState({
             ...item 
         })
-    }
-
-    addItem = () => {
-        console.log(this.state)
     }
 
     render() {
@@ -29,7 +25,7 @@ class ItemPage extends Component {
                    <div className="item-info-right">
                        <h4 className="item-price">{ '£ ' + this.state.price }</h4>
                        <p>{ this.state.body }</p>
-                       <AddToCartButton item={ item } addItem={ this.addItem }/> 
+                       <AddToCartButton item={ item } addItem={ this.props.addItem }/> 
                    </div> 
                 </div> 
             </section>

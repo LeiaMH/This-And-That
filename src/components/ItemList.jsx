@@ -4,18 +4,7 @@ import AddToCartButton from './AddToCartButton'
 import { Link } from 'react-router-dom'
 
 class ItemList extends Component {
-  // state = {
-  //   cartItems: []
-  // }
-
-  // addItem = (item) => {
-  //   console.log(item)
-  //   let cartItems = [...this.state.cartItems, item]
-  //   this.setState({
-  //     cartItems: cartItems
-  //   })
-  // }
-
+  
   render(){
   const itemData =  Data.filter(item => item.type === this.props.type)
   const itemList = itemData.map(item => 

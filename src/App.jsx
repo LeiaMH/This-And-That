@@ -32,7 +32,7 @@ class App extends Component {
             <Route path='/Plants' render={(props) => (<Plants {...props} addItem={ this.addItem } />)}/>
             <Route path='/Stationary' render={(props) => (<Stationary {...props} addItem={ this.addItem } />)}/>
             <Route path='/Shoppingcart' render={(props) => (<Shoppingcart {...props} addItems={ this.state } />)}/>
-            <Route path='/:item_id' component={ItemPage} />
+            <Route path='/:item_id' render={(props) => (<ItemPage {...props} addItem={ this.addItem } />)} />
           </Switch>
         </div>
       </BrowserRouter>

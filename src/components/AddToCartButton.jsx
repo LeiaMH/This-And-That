@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 
 class AddToCartButton extends Component {
-    // state = {
-    //     item: {title: null,
-    //            price: null,
-    //            id: null,}
-    // }
-
+    
     handleClick = (e) => {
         e.preventDefault()
         this.props.addItem({
@@ -16,7 +11,6 @@ class AddToCartButton extends Component {
                    }
         })
     }
-
 
     render(){
         return (
