@@ -14,11 +14,39 @@ class App extends Component {
     cartItems: []
   }
 
-  addItem = (item) => {
-    let cartItems = [...this.state.cartItems, item]
-    this.setState({
+  addItem = ({ item }) => {
+   
+    if(this.state.cartItems.some(cartItem => cartItem.id === item.id)){
+     console.log('not new')
+     const cartItems = this.state.cartItems.map(
+      cartItem => cartItem.id === item.id 
+      ? { ...cartItem, count: cartItem.count+1 } 
+      : cartItem 
+      )
+
+     this.setState({
       cartItems: cartItems
     })
+    }else{
+     console.log('new')
+     const newItem = {...item, count: 1}
+     const cartItems = [...this.state.cartItems, newItem]
+     this.setState({
+      cartItems: cartItems
+    })
+    }
+
+    // let newItem = {...item, count: 0}
+    // let cartItems = [...this.state.cartItems, newItem]
+    // this.setState({
+    //   cartItems: cartItems
+    // })
+
+
+    // let cartItems = [...this.state.cartItems, item]
+    // this.setState({
+    //   cartItems: cartItems
+    // })
   }
 
   render() {
