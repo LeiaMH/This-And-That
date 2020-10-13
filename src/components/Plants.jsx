@@ -2,17 +2,6 @@ import React, { Component } from 'react'
 import ItemList from './ItemList'
 
 class Plants extends Component {
-  // state = {
-  //   cartItems: []
-  // }
-
-  // addItem = (item) => {
-  //   console.log('poooo  ', this)
-  //   let cartItems = [...this.state.cartItems, item]
-  //   this.setState({
-  //     cartItems: cartItems
-  //   })
-  // }
   
   render(){
     return(
