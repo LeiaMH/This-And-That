@@ -5,7 +5,7 @@ const ItemData = [
     "id": 'F1',
     "title": "Chair",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/92c952",
+    "img": "images/chair.jpg",
     "price": "35,-",
   },
   {
@@ -13,7 +13,7 @@ const ItemData = [
     "id": 'F2',
     "title": "Table",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/771796",
+    "img": "images/table.jpg",
     "price": "350,-",
   },
   {
@@ -21,7 +21,7 @@ const ItemData = [
     "id": 'F3',
     "title": "Desk",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/desk.jpg",
     "price": "74,80",
   },
   {
@@ -29,7 +29,7 @@ const ItemData = [
     "id": 'F4',
     "title": "Bookcase",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/bookcase.jpg",
     "price": "15,50",
   },
   {
@@ -37,7 +37,7 @@ const ItemData = [
     "id": 'F5',
     "title": "Shelf",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/shelf.jpg",
     "price": "12,75",
   },
   {
@@ -45,7 +45,7 @@ const ItemData = [
     "id": 'F6',
     "title": "Picture Frame",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/pictureframe.jpg",
     "price": "2,50",
   },
   {
@@ -53,7 +53,7 @@ const ItemData = [
     "id": 'F7',
     "title": "Stool",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/stool.jpg",
     "price": "7,50",
   },
   {
@@ -61,7 +61,7 @@ const ItemData = [
     "id": 'F8',
     "title": "Cushions",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/cushions.jpg",
     "price": "4,30",
   },
   {
@@ -69,7 +69,7 @@ const ItemData = [
     "id": 'P1',
     "title": "Fern",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/92c952",
+    "img": "images/fern.jpg",
     "price": "4,50",
   },
   {
@@ -77,7 +77,7 @@ const ItemData = [
     "id": 'P2',
     "title": "Aloe Vera",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/771796",
+    "img": "images/aloe.jpg",
     "price": "5,50",
   },
   {
@@ -85,7 +85,7 @@ const ItemData = [
     "id": 'P3',
     "title": "Succulents",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/succulents.jpg",
     "price": "6,50",
   },
   {
@@ -93,7 +93,7 @@ const ItemData = [
     "id": 'P4',
     "title": "Orchid",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/orchid.jpg",
     "price": "7,50",
   },
   {
@@ -101,7 +101,7 @@ const ItemData = [
     "id": 'P5',
     "title": "Ficus",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/ficus.jpg",
     "price": "8,50",
   },
   {
@@ -109,7 +109,7 @@ const ItemData = [
     "id": 'P6',
     "title": "Basil",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/basil.jpg",
     "price": "2,50",
   },
   {
@@ -117,7 +117,7 @@ const ItemData = [
     "id": 'P7',
     "title": "Rosemary",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/rosemary.jpg",
     "price": "3,80",
   },
   {
@@ -125,15 +125,15 @@ const ItemData = [
     "id": 'P8',
     "title": "Chinese Money Plant",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/moneyplant.jpg",
     "price": "7,50",
   },
   {
     "type": "stationary",
     "id": 'S1',
-    "title": "Pencil Case",
+    "title": "Pen Case",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/92c952",
+    "img": "images/pencase.jpg",
     "price": "2,50",
   },
   {
@@ -141,7 +141,7 @@ const ItemData = [
     "id": 'S2',
     "title": "Pen",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/771796",
+    "img": "images/pen.jpg",
     "price": "8,50",
   },
   {
@@ -149,15 +149,15 @@ const ItemData = [
     "id": 'S3',
     "title": "Notebook",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/notebook.jpg",
     "price": "4,50",
   },
   {
     "type": "stationary",
     "id": 'S4',
-    "title": "Organiser",
+    "title": "Pencil Box",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/penbox.jpg",
     "price": "9,50",
   },
   {
@@ -165,7 +165,7 @@ const ItemData = [
     "id": 'S5',
     "title": "Folder",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/folder.jpg",
     "price": "3,50",
   },
   {
@@ -173,7 +173,7 @@ const ItemData = [
     "id": 'S6',
     "title": "Desk Lamp",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/24f355",
+    "img": "images/desklamp.jpg",
     "price": "25,-",
   },
   {
@@ -181,7 +181,7 @@ const ItemData = [
     "id": 'S7',
     "title": "Notice Board",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/d32776",
+    "img": "images/noticeboard.jpg",
     "price": "3,50",
   },
   {
@@ -189,7 +189,7 @@ const ItemData = [
     "id": 'S8',
     "title": "Bullet Journal",
     "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius deserunt laborum repellat quae est pariatur adipisci facere recusandae, voluptatum magni beatae. Sunt voluptates ullam distinctio repellendus molestiae qui hic.",
-    "img": "https://via.placeholder.com/600/f66b97",
+    "img": "images/journal.jpg",
     "price": "17,45",
   }
 ]

@@ -235,7 +235,10 @@ section.item-container div.item-card p {
 
 section.item-container div.item-card img {
   width: 90%;
-  height: auto;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 350px;
 }
 
 section.item-container div.item-card h4.item-price {
@@ -366,8 +369,12 @@ section.item-page-container div.item-info-container div.item-info-left {
   width: 50%;
 }
 
-section.item-page-container div.item-info-container div.item-info-left img {
+section.item-page-container div.item-info-container div.item-info-left img.item-image {
   margin: 50px;
+  width: 90%;
+  max-height: 55vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.item-page-container div.item-info-container div.item-info-right {

@@ -3,6 +3,8 @@ import Data from '../data/ItemData'
 import AddToCartButton from './AddToCartButton'
 import { Link } from 'react-router-dom'
 
+
+
 class ItemList extends Component {
   
   render(){
@@ -12,7 +14,7 @@ class ItemList extends Component {
         <Link to={ '/' + item.id }>
             <h3 className="item-title">{ item.title }</h3>
         </Link>
-        <img src={ item.img } alt="product"/>
+        <img className="item-img" src={require(`../data/${item.img}`)} alt="product"/>
         <h4 className="item-price">{ '£ ' + item.price }</h4>
         <p className="item-description">{ item.body }</p>
         <AddToCartButton item={ item } addItem={ this.props.addItem } />

@@ -5,7 +5,7 @@ import AddToCartButton from './AddToCartButton'
 class ItemPage extends Component {
      state = {}
 
-    componentDidMount(){
+    componentWillMount(){
         let id = this.props.match.params.item_id;
         let item = ItemData.filter(item => item.id === id)[0];
         this.setState({
@@ -20,7 +20,7 @@ class ItemPage extends Component {
                 <h1>{ this.state.title }</h1>
                 <div className="item-info-container">
                    <div className="item-info-left">
-                       <img src={ this.state.img } alt="product"/ >
+                       <img className="item-image" src={require(`../data/${this.state.img}`)} alt="product"/>
                    </div>
                    <div className="item-info-right">
                        <h4 className="item-price">{ '£ ' + this.state.price }</h4>

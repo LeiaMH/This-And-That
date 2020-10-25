@@ -164,7 +164,9 @@ section.item-container{
         }
         img{
             width: 90%;
-            height: auto;
+            height: 350px;
+            object-fit: cover;
+            max-height: 350px;
         }
         h4.item-price{
             text-align: center;
@@ -256,8 +258,11 @@ section.item-page-container{
             display: flex;
             flex-direction: column;
             width: 50%;
-            img{
+            img.item-image{
                 margin: 50px;
+                width: 90%;
+                max-height: 55vh;
+                object-fit: cover;
             }
         }
         div.item-info-right{
